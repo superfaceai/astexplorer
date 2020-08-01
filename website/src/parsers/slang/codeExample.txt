@@ -1,0 +1,44 @@
+profile = "https://example.com/profile/myProfile"
+
+# Models #
+
+"This is my model"
+model MyModel {
+	f1 enum { a b }
+	f2 string 
+	f3 {
+		f3a
+		f3b
+	}
+	f4 { f4a, f4b boolean }
+	f8, f9, f10
+	f13 string, f14
+}
+
+# Usecases #
+
+"""
+My usecase
+
+This is my usecase
+"""
+usecase MyUsecase {
+    input {
+      "Input
+      This field is for input"
+      in [MyModel]
+    }
+    
+    result boolean
+    
+    async result {
+      "This field is for output"
+      out string
+      "This field is reused"
+      myField
+    }
+}
+
+# Fields #
+
+field myField number
