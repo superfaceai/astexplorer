@@ -1,13 +1,11 @@
 import defaultParserInterface from '../utils/defaultParserInterface';
 import pkg from '@superindustries/superface-parser/package.json';
 
-const ID = 'slang-profile';
-
 export default {
   ...defaultParserInterface,
 
-  id: ID,
-  displayName: ID,
+  id: 'superface-parser-profile',
+  displayName: 'Superface Parser',
   version: pkg.version,
   homepage: pkg.homepage,
   locationProps: new Set(['location', 'span']),

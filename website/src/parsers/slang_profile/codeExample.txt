@@ -4,7 +4,7 @@ profile = "https://example.com/profile/myProfile"
 
 "This is my model"
 model MyModel {
-	f1 enum { a b }
+	f1 enum { a, b }
 	f2 string 
 	f3 {
 		f3a
