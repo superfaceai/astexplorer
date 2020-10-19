@@ -6,22 +6,22 @@ import * as React from 'react';
 export default {
   ...defaultParserInterface,
 
-  id: 'superface-parser-map',
-  displayName: 'Superface Parser',
+  id: 'superface-parser-map-extended',
+  displayName: 'Superface Parser X',
   version: pkg.version,
   homepage: pkg.homepage,
   locationProps: new Set(['location', 'span']),
   typeProps: new Set(['kind']),
 
   loadParser(callback) {
-    require(['@superindustries/superface-parser'], ({ parseMap, Source }) => {
-      callback({ parseMap, Source });
+    require(['@superindustries/superface-parser'], ({ parseMapExtended, Source }) => {
+      callback({ parseMapExtended, Source });
     });
   },
 
-  parse({ parseMap, Source }, code, options) {
+  parse({ parseMapExtended, Source }, code, options) {
     try {
-      return parseMap(new Source(code))
+      return parseMapExtended(new Source(code))
     } catch (e) {
       throw {
         message: <pre>{e.format()}</pre>
