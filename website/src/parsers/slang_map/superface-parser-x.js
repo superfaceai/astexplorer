@@ -6,7 +6,7 @@ import * as React from 'react';
 export default {
   ...defaultParserInterface,
 
-  id: 'superface-parser-map-extended',
+  id: 'superface-parser-map-x',
   displayName: 'Superface Parser X',
   version: pkg.version,
   homepage: pkg.homepage,
@@ -14,18 +14,29 @@ export default {
   typeProps: new Set(['kind']),
 
   loadParser(callback) {
-    require(['@superindustries/superface-parser'], ({ parseMapExtended, Source }) => {
-      callback({ parseMapExtended, Source });
+    require(['@superindustries/superface-parser'], ({ parseMap, Source, PARSER_FEATURES }) => {
+      callback({ parseMap, Source, PARSER_FEATURES });
     });
   },
 
-  parse({ parseMapExtended, Source }, code, options) {
+  parse({ parseMap, Source, PARSER_FEATURES }, code, options) {
+    const oldFeatures = { ...PARSER_FEATURES };
+    for (const feature of Object.keys(PARSER_FEATURES)) {
+      PARSER_FEATURES[feature] = true;
+    }
+    
     try {
-      return parseMapExtended(new Source(code))
+      return parseMap(new Source(code))
     } catch (e) {
       throw {
         message: <pre>{e.format()}</pre>
       }
+    } finally {
+      console.debug(PARSER_FEATURES, oldFeatures);
+      for (const feature of Object.keys(PARSER_FEATURES)) {
+        PARSER_FEATURES[feature] = oldFeatures[feature];
+      }
+      console.debug(PARSER_FEATURES);
     }
   },
 
