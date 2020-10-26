@@ -1615,10 +1615,10 @@
   resolved "https://npm.pkg.github.com/download/@superindustries/language/0.0.14-alpha3/3b274df9836b1c277ebefaef08dc70a56894e06e0efc5c6447dffc0db1c77ffe#81c4b8a8ac25505323da99d14c8f9a9f5950c9b7"
   integrity sha512-41Ex1coBX9m9nE95pmtV41rJhe4ia60ZvYbhnYfZDNqUEbHajVJAlMV2Mq0AlF1OszyPVIRcZHmncajFFBjTjg==
 
-"@superindustries/superface-parser@^0.0.4-beta2":
-  version "0.0.4-beta2"
-  resolved "https://npm.pkg.github.com/download/@superindustries/superface-parser/0.0.4-beta2/89ca16d002b2eef33e439c1ebd418b5e2b2b1cbf23bc069420154bf8e2b6f0c8#d2bb61a9f06e083cd400a0825b9d65bb21465b6c"
-  integrity sha512-vTzXjlJzBg3MCiLEBR0gT3Hph4MOdhbYRmdoo2UQMMBpDvaY0HtokRjvNZZMUdQSzzNxfsfmTxIFZ8lJmY0CRg==
+"@superindustries/superface-parser@^0.0.4-beta3":
+  version "0.0.4-beta3"
+  resolved "https://npm.pkg.github.com/download/@superindustries/superface-parser/0.0.4-beta3/1f95c13e0479c1e62471e8405fdaa73ed85d31197c1ea876e9a3270637b394cd#1559fdfea9856073cb6b125ee433f38f0908dead"
+  integrity sha512-Kvwo33xl6v/CNgOarriWTr1yHSJ5NYBRUdWN98okx356LS7Ks6xd0+RmGJQ4ydmc+djqECQe+p4hjwjmRbx42w==
   dependencies:
     "@superindustries/language" "^0.0.14-alpha3"
     typescript "^4.0.2"
