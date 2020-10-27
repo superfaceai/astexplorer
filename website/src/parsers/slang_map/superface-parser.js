@@ -2,6 +2,7 @@ import defaultParserInterface from '../utils/defaultParserInterface';
 import pkg from '@superindustries/superface-parser/package.json';
 
 import * as React from 'react';
+import { PARSER_FEATURES } from '@superindustries/superface-parser';
 
 export default {
   ...defaultParserInterface,
@@ -21,6 +22,10 @@ export default {
 
   parse({ parseMap, Source }, code, options) {
     try {
+      for (const feature of Object.keys(PARSER_FEATURES)) {
+        PARSER_FEATURES[feature] = options[feature];
+      }
+
       return parseMap(new Source(code))
     } catch (e) {
       throw {
@@ -37,5 +42,11 @@ export default {
 
   getNodeName(node) {
     return node.kind;
+  },
+
+  getDefaultOptions() {
+    return {
+      ...PARSER_FEATURES
+    };
   },
 };
