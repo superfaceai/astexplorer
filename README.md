@@ -181,7 +181,7 @@ are included so you can prototype your own plugins:
 [mdx]: https://mdxjs.com/advanced/sync-api
 [scalameta]: http://scalameta.org/
 [solidity-parser-antlr]: https://github.com/federicobond/solidity-parser-antlr
-[superface-parser]: https://github.com/superindustries/superface-parser
+[superface-parser]: https://github.com/superfaceai/superface-parser
 [vue-template-compiler]: https://github.com/vuejs/vue/tree/dev/packages/vue-template-compiler
 [@vue/compiler-core]: https://github.com/vuejs/vue-next/blob/master/packages/compiler-core/README.md
 [vue-eslint-parser]: https://github.com/mysticatea/vue-eslint-parser

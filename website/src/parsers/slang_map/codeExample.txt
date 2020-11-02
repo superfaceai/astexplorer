@@ -65,12 +65,12 @@ map Foo {
 				bar = "world"
 			}
 
-			// https://sfspec.surge.sh/map#HTTPHeaders
+			// https://sfspec.surge.sh/map//HTTPHeaders
 			headers {
 				"User-Agent" = "superface v1"
 			}
 
-			// https://sfspec.surge.sh/map#HTTPBody
+			// https://sfspec.surge.sh/map//HTTPBody
 			body {
 				foo = 1,
 				bar = 1 + 1,
@@ -117,5 +117,9 @@ map Foo {
 		response 404 "text/html" "en-US" {
 			foo = 1
 		}
+	}
+
+	http OPTIONS "/" {
+		security none
 	}
 }

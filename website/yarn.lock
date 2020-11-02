@@ -1610,17 +1610,17 @@
   resolved "https://registry.yarnpkg.com/@simple-dom/interface/-/interface-1.4.0.tgz#e8feea579232017f89b0138e2726facda6fbb71f"
   integrity sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==
 
-"@superindustries/language@^0.0.14-alpha3":
-  version "0.0.14-alpha3"
-  resolved "https://npm.pkg.github.com/download/@superindustries/language/0.0.14-alpha3/3b274df9836b1c277ebefaef08dc70a56894e06e0efc5c6447dffc0db1c77ffe#81c4b8a8ac25505323da99d14c8f9a9f5950c9b7"
-  integrity sha512-41Ex1coBX9m9nE95pmtV41rJhe4ia60ZvYbhnYfZDNqUEbHajVJAlMV2Mq0AlF1OszyPVIRcZHmncajFFBjTjg==
+"@superfaceai/language@^0.0.16-alpha":
+  version "0.0.16-alpha"
+  resolved "https://npm.pkg.github.com/download/@superfaceai/language/0.0.16-alpha/913892b29cabd146df4b5a9e30bb14274ccc2c700fe24bfcc732026a3b7fa29f#4a98d573d72fa70bab690d3bd1134044183caa6d"
+  integrity sha512-0QUfQ5b1F7q2bTYSyUkXtgoZIgzrRuKQd1LEbs++fLpGTp4GKhLwiUtQkmxZmgZpNkN2mig308NoBms1WIUMcA==
 
-"@superindustries/superface-parser@^0.0.4-beta3":
-  version "0.0.4-beta3"
-  resolved "https://npm.pkg.github.com/download/@superindustries/superface-parser/0.0.4-beta3/1f95c13e0479c1e62471e8405fdaa73ed85d31197c1ea876e9a3270637b394cd#1559fdfea9856073cb6b125ee433f38f0908dead"
-  integrity sha512-Kvwo33xl6v/CNgOarriWTr1yHSJ5NYBRUdWN98okx356LS7Ks6xd0+RmGJQ4ydmc+djqECQe+p4hjwjmRbx42w==
+"@superfaceai/superface-parser@^0.0.5-alpha":
+  version "0.0.5-beta"
+  resolved "https://npm.pkg.github.com/download/@superfaceai/superface-parser/0.0.5-beta/8d94fd563c0826044a12d6e75eb9d0b1b186a06661e0fc295f205822fff87573#3f820b5227f69a88691f87399673bd1960f38eb2"
+  integrity sha512-FDH4Jo7xZiCW9ZGj8mk9CPt3y6sTSssM5R848YZpfHNX0T/rg6qizMJgFwae4rhiOIAr5se9tllveovIc1WZXQ==
   dependencies:
-    "@superindustries/language" "^0.0.14-alpha3"
+    "@superfaceai/language" "^0.0.16-alpha"
     typescript "^4.0.2"
 
 "@types/color-name@^1.1.1":

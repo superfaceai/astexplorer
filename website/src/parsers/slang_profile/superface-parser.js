@@ -1,5 +1,7 @@
 import defaultParserInterface from '../utils/defaultParserInterface';
-import pkg from '@superindustries/superface-parser/package.json';
+import pkg from '@superfaceai/superface-parser/package.json';
+
+import * as React from 'react';
 
 export default {
   ...defaultParserInterface,
@@ -12,13 +14,23 @@ export default {
   typeProps: new Set(['kind']),
 
   loadParser(callback) {
-    require(['@superindustries/superface-parser'], ({ parseProfile, Source }) => {
+    require(['@superfaceai/superface-parser'], ({ parseProfile, Source }) => {
       callback({ parseProfile, Source });
     });
   },
 
   parse({ parseProfile, Source }, code, options) {
     return parseProfile(new Source(code))
+  },
+
+  parse({ parseProfile, Source }, code, options) {
+    try {
+      return parseProfile(new Source(code))
+    } catch (e) {
+      throw {
+        message: <pre>{e.format()}</pre>
+      }
+    }
   },
 
   nodeToRange(node) {

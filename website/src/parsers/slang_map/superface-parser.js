@@ -1,8 +1,8 @@
 import defaultParserInterface from '../utils/defaultParserInterface';
-import pkg from '@superindustries/superface-parser/package.json';
+import pkg from '@superfaceai/superface-parser/package.json';
 
 import * as React from 'react';
-import { PARSER_FEATURES } from '@superindustries/superface-parser';
+import { PARSER_FEATURES } from '@superfaceai/superface-parser';
 
 export default {
   ...defaultParserInterface,
@@ -15,7 +15,7 @@ export default {
   typeProps: new Set(['kind']),
 
   loadParser(callback) {
-    require(['@superindustries/superface-parser'], ({ parseMap, Source }) => {
+    require(['@superfaceai/superface-parser'], ({ parseMap, Source }) => {
       callback({ parseMap, Source });
     });
   },
