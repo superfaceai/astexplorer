@@ -1610,6 +1610,19 @@
   resolved "https://registry.yarnpkg.com/@simple-dom/interface/-/interface-1.4.0.tgz#e8feea579232017f89b0138e2726facda6fbb71f"
   integrity sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==
 
+"@superfaceai/language@^0.0.16-alpha":
+  version "0.0.16-alpha"
+  resolved "https://npm.pkg.github.com/download/@superfaceai/language/0.0.16-alpha/913892b29cabd146df4b5a9e30bb14274ccc2c700fe24bfcc732026a3b7fa29f#4a98d573d72fa70bab690d3bd1134044183caa6d"
+  integrity sha512-0QUfQ5b1F7q2bTYSyUkXtgoZIgzrRuKQd1LEbs++fLpGTp4GKhLwiUtQkmxZmgZpNkN2mig308NoBms1WIUMcA==
+
+"@superfaceai/superface-parser@^0.0.5-alpha":
+  version "0.0.5-beta"
+  resolved "https://npm.pkg.github.com/download/@superfaceai/superface-parser/0.0.5-beta/8d94fd563c0826044a12d6e75eb9d0b1b186a06661e0fc295f205822fff87573#3f820b5227f69a88691f87399673bd1960f38eb2"
+  integrity sha512-FDH4Jo7xZiCW9ZGj8mk9CPt3y6sTSssM5R848YZpfHNX0T/rg6qizMJgFwae4rhiOIAr5se9tllveovIc1WZXQ==
+  dependencies:
+    "@superfaceai/language" "^0.0.16-alpha"
+    typescript "^4.0.2"
+
 "@types/color-name@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@types/color-name/-/color-name-1.1.1.tgz#1c1261bbeaa10a8055bbc5d8ab84b7b2afc846a0"
@@ -10874,6 +10887,11 @@ typescript-estree@18.0.0:
     semver "5.5.0"
 
 typescript@^4.0.3:
+  version "4.0.3"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
+  integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
+
+typescript@^4.0.2:
   version "4.0.3"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.3.tgz#153bbd468ef07725c1df9c77e8b453f8d36abba5"
   integrity sha512-tEu6DGxGgRJPb/mVPIZ48e69xCn2yRmCgYmDugAVwmJ6o+0u1RI18eO7E7WBTLYLaEVVOhwQmcdhQHweux/WPg==
