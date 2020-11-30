@@ -1,13 +1,13 @@
 import defaultParserInterface from '../utils/defaultParserInterface';
-import pkg from '@superfaceai/superface-parser/package.json';
+import pkg from '@superfaceai/parser/package.json';
 
 import * as React from 'react';
-import { PARSER_FEATURES } from '@superfaceai/superface-parser';
+import { PARSER_FEATURES } from '@superfaceai/parser';
 
 export default {
   ...defaultParserInterface,
 
-  id: 'superface-parser-map',
+  id: 'parser-map',
   displayName: 'Superface Parser',
   version: pkg.version,
   homepage: pkg.homepage,
@@ -15,7 +15,7 @@ export default {
   typeProps: new Set(['kind']),
 
   loadParser(callback) {
-    require(['@superfaceai/superface-parser'], ({ parseMap, Source }) => {
+    require(['@superfaceai/parser'], ({ parseMap, Source }) => {
       callback({ parseMap, Source });
     });
   },
@@ -26,11 +26,11 @@ export default {
         PARSER_FEATURES[feature] = options[feature];
       }
 
-      return parseMap(new Source(code))
+      return parseMap(new Source(code));
     } catch (e) {
       throw {
-        message: <pre>{e.format()}</pre>
-      }
+        message: <pre>{e.format()}</pre>,
+      };
     }
   },
 
@@ -46,7 +46,7 @@ export default {
 
   getDefaultOptions() {
     return {
-      ...PARSER_FEATURES
+      ...PARSER_FEATURES,
     };
   },
 };
