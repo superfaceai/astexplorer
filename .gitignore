@@ -5,3 +5,5 @@ package-lock.json
 
 .yalc
 yalc.lock
+
+.vercel
